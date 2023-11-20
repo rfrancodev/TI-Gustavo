@@ -2,8 +2,8 @@ const express = require('express');
 const rotas = require('./routes');
 
 const app = express()
+app.use(express.json())
 
-rotas.use(express.json())
 
-
-app.listen(3000, () => { console.log('Server running'); })
+app.use(rotas)
+app.listen(3000)

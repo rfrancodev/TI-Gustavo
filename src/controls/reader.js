@@ -1,5 +1,5 @@
 const leitorDados = async (req, res) => {
-    return res.send('OK')
+    return res.send('No ar')
 }
 
 module.exports = {
